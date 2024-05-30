@@ -1,0 +1,83 @@
+.container-1{
+    height: 60vh;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: auto;
+}
+
+.container-1-left{
+    float: left;
+    width: 40%;
+    margin: auto;
+    margin-left: 10%;
+    /* height: 10px; */
+    size: 100px;
+    /* margin-right: 5%; */
+}
+
+.container-1-right{
+    background-color: #C2F4AD;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    float: right;
+    font-size: x-large;
+    color: green;
+    font-weight: 500;
+    width: 30%;
+    /* margin: auto; */
+    /* margin-left: 3%; */
+    margin-right: 10%;
+}
+
+.image{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.container-2{
+    /* height: 80vh; */
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 5%;
+    /* margin-left: 5%; */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-bottom: 50px;
+}
+
+.sub-container{
+    height: 60vh;
+    background-color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: larger;
+    padding: 20px;
+}
+
+.card-image{
+    width: 90%;
+    margin-left: 50px;
+    align-self: center;
+    /* position: absolute; */
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}

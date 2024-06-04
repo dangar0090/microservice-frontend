@@ -63,7 +63,7 @@ export default function SignUp() {
       try {
         let res;
         if (doctor) {
-          res = await axios.post("http://localhost:3000/authService/signup", {
+          res = await axios.post("https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/authService/signup", {
             doctorname: name,
             email: email,
             password: password,
@@ -71,7 +71,7 @@ export default function SignUp() {
             client: "doctor",
           });
         } else {
-          res = await axios.post("http://localhost:3000/authService/signup", {
+          res = await axios.post("https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/authService/signup", {
             username: name,
             email: email,
             password: password,

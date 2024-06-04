@@ -73,7 +73,7 @@ export default function Login() {
       if (doctor) {
         try {
           const res = await axios.post(
-            "http://localhost:3000/authService/signin",
+            "https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/authService/signin",
             {
               email: email,
               password: password,
@@ -103,7 +103,7 @@ export default function Login() {
       } else {
         try {
           const res = await axios.post(
-            "http://localhost:3000/authService/signin",
+            "https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/authService/signin",
             {
               email: email,
               password: password,

@@ -38,7 +38,7 @@ const PrescriptionPage = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/doctorService/prescriptions");
+      const response = await axios.get("https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/doctorService/prescriptions");
       if (response && response.data) {
         const array = response.data;
         const arr = array.filter((obj) => obj.queryId === queryId);

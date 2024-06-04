@@ -50,7 +50,7 @@ const Prescribe = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("https://test-aws-app.simform.solutions/doctorService/prescriptions");
+      const response = await axios.get("https://test-aws-app.simform.solutions/doctor-service/prescriptions");
       if (response && response.data) {
         const array = response.data;
         const arr = array.filter((obj) => obj.queryId === queryId);
@@ -84,7 +84,7 @@ const Prescribe = () => {
     } else {
       try {
         const res = await axios.post(
-          `https://test-aws-app.simform.solutions/doctorService/${userId}/${queryId}/prescription`,
+          `https://test-aws-app.simform.solutions/doctor-service/${userId}/${queryId}/prescription`,
           { body: prescription }
         );
         toast.success("Your prescription has been added successfully!", {
@@ -106,7 +106,7 @@ const Prescribe = () => {
     e.preventDefault();
     try {
       const res = await axios.patch(
-        `https://test-aws-app.simform.solutions/doctorService/${prescId}`,
+        `https://test-aws-app.simform.solutions/doctor-service/${prescId}`,
         { body: prescription }
       );
       toast.success("Your prescription has been updated successfully!", {
@@ -126,7 +126,7 @@ const Prescribe = () => {
     e.preventDefault();
     try {
       const res = await axios.delete(
-        `https://test-aws-app.simform.solutions/doctorService/${queryId}/${prescId}`
+        `https://test-aws-app.simform.solutions/doctor-service/${queryId}/${prescId}`
       );
       toast.success("Your prescription has been deleted successfully!", {
         position: toast.POSITION.TOP_CENTER,

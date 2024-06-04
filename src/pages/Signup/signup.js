@@ -63,7 +63,7 @@ export default function SignUp() {
       try {
         let res;
         if (doctor) {
-          res = await axios.post("https://test-aws-app.simform.solutions/authService/signup", {
+          res = await axios.post("https://test-aws-app.simform.solutions/auth-service/signup", {
             doctorname: name,
             email: email,
             password: password,
@@ -71,7 +71,7 @@ export default function SignUp() {
             client: "doctor",
           });
         } else {
-          res = await axios.post("https://test-aws-app.simform.solutions/authService/signup", {
+          res = await axios.post("https://test-aws-app.simform.solutions/auth-service/signup", {
             username: name,
             email: email,
             password: password,

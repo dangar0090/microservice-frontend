@@ -34,7 +34,7 @@ const QueryPage = () => {
     var array;
     var arr = [];
     await axios
-      .get("https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/userService/queries")
+      .get("https://test-aws-app.simform.solutions/userService/queries")
       .then((response) => {
         array = response.data;
         arr = array.filter((obj) => {
@@ -59,7 +59,7 @@ const QueryPage = () => {
     } else {
       try {
         const res = await axios.post(
-          `https://microapp-ALB-685019548.us-east-1.elb.amazonaws.com/userService/${userId}/query`,
+          `https://test-aws-app.simform.solutions/userService/${userId}/query`,
           {
             body: query,
           }

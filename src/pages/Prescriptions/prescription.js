@@ -38,7 +38,7 @@ const PrescriptionPage = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get("https://test-aws-app.simform.solutions/doctor-service/prescriptions");
+      const response = await axios.get("https://test-aws-app.simform.solutions/doctorService/prescriptions");
       if (response && response.data) {
         const array = response.data;
         const arr = array.filter((obj) => obj.queryId === queryId);

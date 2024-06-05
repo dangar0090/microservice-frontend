@@ -73,7 +73,7 @@ export default function Login() {
       if (doctor) {
         try {
           const res = await axios.post(
-            "https://test-aws-app.simform.solutions/auth-service/signin",
+            "https://test-aws-app.simform.solutions/authService/signin",
             {
               email: email,
               password: password,
@@ -103,7 +103,7 @@ export default function Login() {
       } else {
         try {
           const res = await axios.post(
-            "https://test-aws-app.simform.solutions/auth-service/signin",
+            "https://test-aws-app.simform.solutions/authService/signin",
             {
               email: email,
               password: password,

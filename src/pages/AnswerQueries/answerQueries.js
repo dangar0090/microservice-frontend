@@ -33,7 +33,7 @@ const AnswerQueriesPage = () => {
   const getData = async (e) => {
     let arr = [];
     await axios
-      .get("https://test-aws-app.simform.solutions/user-service/queries")
+      .get("https://test-aws-app.simform.solutions/userService/queries")
       .then((response) => {
         arr = response.data;
         arr.reverse();
